@@ -1,0 +1,26 @@
+[project]
+name = "workmate-logger-analyzer"
+version = "0.1.0"
+description = "Test task"
+authors = [
+    {name = "Vadim Bakhtiarov",email = "vadima64@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "argparse (>=1.4.0,<2.0.0)",
+    "flake8 (>=7.2.0,<8.0.0)",
+    "pylint (>=3.3.6,<4.0.0)",
+    "ruff (>=0.11.7,<0.12.0)",
+    "pytest-cov (>=6.1.1,<7.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "flake8-docstrings (>=1.7.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+disable = ["redefined-outer-name"]
